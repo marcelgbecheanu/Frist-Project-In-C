@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Marce/CLionProjects/Trabalho Final/main.c
+windows.h
+-
+menu.h
+C:/Users/Marce/CLionProjects/Trabalho Final/menu.h
+menus.h
+C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
+
+C:/Users/Marce/CLionProjects/Trabalho Final/menu.c
+stdio.h
+-
+windows.h
+-
+utils.h
+C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
+
+C:/Users/Marce/CLionProjects/Trabalho Final/menu.h
+
+C:/Users/Marce/CLionProjects/Trabalho Final/menus.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+utils.h
+C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
+menus.h
+C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
+
+C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
+
+C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
+

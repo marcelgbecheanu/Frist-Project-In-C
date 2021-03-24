@@ -1,0 +1,3 @@
+C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir
+C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/rebuild_cache.dir
