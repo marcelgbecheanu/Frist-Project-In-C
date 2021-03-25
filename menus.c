@@ -4,9 +4,8 @@
 #include "utils.h"
 #include "menus.h"
 
-
-list* createList(){
-    list* listCache = (list *) malloc(sizeof(list));
+listMenu* createList(){
+    listMenu* listCache = (listMenu *) malloc(sizeof(listMenu));
 
     listCache->size = 0;
     listCache->head = NULL;
@@ -15,8 +14,8 @@ list* createList(){
 }
 
 // ADICIONA UM MENU A LISTA
-void push(list* listCache, menu m){
-    node* nodeCache = (node*) malloc(sizeof(node));
+void push(listMenu* listCache, menu m){
+    nodeMenu* nodeCache = (nodeMenu*) malloc(sizeof(nodeMenu));
 
     nodeCache->data = m;
     nodeCache->next = listCache->head;
@@ -25,8 +24,8 @@ void push(list* listCache, menu m){
 }
 
 //IMPRIME A LISTA
-void printList(list* l){
-    node* pointer = l->head;
+void printList(listMenu* l){
+    nodeMenu* pointer = l->head;
 
     system("cls");
     printf("[!]=+=+=+=+=+=+=+=[ MENUS ]=+=+=+=+=+=+=+=[!]\n");
@@ -41,9 +40,8 @@ void printList(list* l){
         pointer = pointer->next;
     }
     printf("[!]=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=[!]\n");
-
-
 }
+
 // VERIFICA SE EXISTE UM FICHEIRO DE ARMAZENAMENTO SE NÃO O CRIA E DEFINE ALGUNS PARAMETROS DEFAULT
 void createStorageIfNotExistMenus(){
     FILE *file;

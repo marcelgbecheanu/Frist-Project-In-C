@@ -8,17 +8,17 @@ typedef struct menu{
     float total;
 } menu;
 
-typedef struct node{
+typedef struct nodeMenu{
     menu data;
-    struct node* next;
-} node;
+    struct nodeMenu* next;
+} nodeMenu;
 
-typedef struct list{
+typedef struct listMenu{
     int size;
-    node *head;
-} list;
+    nodeMenu *head;
+} listMenu;
 
-list* l;
+listMenu* l;
 
 void loadMenus();
 void showMenus();

@@ -1,6 +1,6 @@
 // Defindo nome dos arquivos de armazenamento.
 #define DIR_MENUS_STORAGE "Menus.txt"
-
+#define DIR_CLIENTS_STORAGE "Clients.txt"
 
 /*
  * Permite a utilização de cores na consola.
