@@ -4,7 +4,7 @@
 #include "utils.h"
 #include "clients.h"
 
-listClients* createList(){
+listClients* createListClients(){
     listClients* listCache = (listClients *) malloc(sizeof(listClients));
 
     listCache->size = 0;
@@ -14,7 +14,7 @@ listClients* createList(){
 }
 
 // ADICIONA UM CLIENTE A LISTA
-void push(listClients* listCache, client c){
+void pushClient(listClients* listCache, client c){
     nodeClient* nodeCache = (nodeClient*) malloc(sizeof(nodeClient));
 
     nodeCache->data = c;
@@ -24,7 +24,7 @@ void push(listClients* listCache, client c){
 }
 
 // VERIFICA SE EXISTE UM FICHEIRO DE ARMAZENAMENTO SE NÃO O CRIA E DEFINE ALGUNS PARAMETROS DEFAULT
-void createStorageIfNotExistMenus(){
+void createStorageIfNotExistClients(){
     FILE *file;
     if (file = fopen(DIR_CLIENTS_STORAGE, "r"))
     {
@@ -38,4 +38,7 @@ void createStorageIfNotExistMenus(){
         fclose(file);
     }
     file = NULL;
+}
+void loadClients(){
+
 }

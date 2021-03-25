@@ -4,7 +4,7 @@
 #include "utils.h"
 #include "menus.h"
 
-listMenu* createList(){
+listMenu* createListMenu(){
     listMenu* listCache = (listMenu *) malloc(sizeof(listMenu));
 
     listCache->size = 0;
@@ -14,7 +14,7 @@ listMenu* createList(){
 }
 
 // ADICIONA UM MENU A LISTA
-void push(listMenu* listCache, menu m){
+void pushMenu(listMenu* listCache, menu m){
     nodeMenu* nodeCache = (nodeMenu*) malloc(sizeof(nodeMenu));
 
     nodeCache->data = m;
@@ -24,7 +24,7 @@ void push(listMenu* listCache, menu m){
 }
 
 //IMPRIME A LISTA
-void printList(listMenu* l){
+void printListMenu(listMenu* l){
     nodeMenu* pointer = l->head;
 
     system("cls");
@@ -62,7 +62,7 @@ void createStorageIfNotExistMenus(){
 //CARREGA DO FICHEIRO PARA A LISTA DINAMICA OS VALORES
 void loadMenus(){
     createStorageIfNotExistMenus();
-    l = createList();
+    l = createListMenu();
 
     FILE* filePointer;
     int bufferLength = 255;
@@ -90,7 +90,7 @@ void loadMenus(){
 
                 m.total = (m.amount * m.price);
 
-                push(l, m);
+                pushMenu(l, m);
             }
         }
     }
@@ -99,5 +99,5 @@ void loadMenus(){
 }
 //IMPRIME A LISTA
 void showMenus(){
-    printList(l);
+    printListMenu(l);
 }

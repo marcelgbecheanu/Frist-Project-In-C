@@ -26,3 +26,5 @@ typedef struct listClients{
     int size;
     nodeClient *head;
 } listClients;
+
+void loadClients();
