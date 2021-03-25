@@ -62,7 +62,7 @@ void createStorageIfNotExistMenus(){
 //CARREGA DO FICHEIRO PARA A LISTA DINAMICA OS VALORES
 void loadMenus(){
     createStorageIfNotExistMenus();
-    l = createListMenu();
+    listMenus = createListMenu();
 
     FILE* filePointer;
     int bufferLength = 255;
@@ -90,7 +90,7 @@ void loadMenus(){
 
                 m.total = (m.amount * m.price);
 
-                pushMenu(l, m);
+                pushMenu(listMenus, m);
             }
         }
     }
@@ -99,5 +99,5 @@ void loadMenus(){
 }
 //IMPRIME A LISTA
 void showMenus(){
-    printListMenu(l);
+    printListMenu(listMenus);
 }

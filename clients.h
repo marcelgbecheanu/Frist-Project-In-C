@@ -5,7 +5,7 @@
 typedef struct client {
     char id[10];
     char name[50];
-    char Typology;
+    char typology;
     char date[10];
     char hour[8];
     int ability;
@@ -24,7 +24,10 @@ typedef struct nodeClient{
 
 typedef struct listClients{
     int size;
-    nodeClient *head;
+    nodeClient* head;
 } listClients;
 
+listClients* clients;
+
 void loadClients();
+void saveClients();

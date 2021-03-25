@@ -15,10 +15,10 @@ typedef struct nodeMenu{
 
 typedef struct listMenu{
     int size;
-    nodeMenu *head;
+    nodeMenu* head;
 } listMenu;
 
-listMenu* l;
+listMenu* listMenus;
 
 void loadMenus();
 void showMenus();

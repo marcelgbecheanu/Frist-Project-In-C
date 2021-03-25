@@ -1,4 +1,5 @@
 #include <windows.h>
+#include <stdio.h>
 #include "menu.h"
 #include "menus.h"
 #include "clients.h"
@@ -19,6 +20,14 @@ int main(){
                 system("pause");
                 break;
             case 2:
+                saveClients();
+                break;
+            case 3:
+                printf("%s\n",clients->head->data.id);
+                printf("%s\n",clients->head->next->data.id);
+                printf("%s\n",clients->head->next->next->data.id);
+
+                system("pause");
                 break;
 
         }
