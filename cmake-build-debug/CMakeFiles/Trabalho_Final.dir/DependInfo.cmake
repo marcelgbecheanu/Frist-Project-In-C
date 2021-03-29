@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/Marce/CLionProjects/Trabalho Final/main.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/main.c.obj"
   "C:/Users/Marce/CLionProjects/Trabalho Final/menu.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/menu.c.obj"
   "C:/Users/Marce/CLionProjects/Trabalho Final/menus.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/menus.c.obj"
+  "C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/takeaway.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

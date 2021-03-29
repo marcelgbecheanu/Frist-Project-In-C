@@ -11,6 +11,7 @@ CMakeFiles/Trabalho_Final.dir/main.c.obj
  C:/Users/Marce/CLionProjects/Trabalho Final/main.c
  C:/Users/Marce/CLionProjects/Trabalho Final/menu.h
  C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
+ C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.h
 CMakeFiles/Trabalho_Final.dir/menu.c.obj
  C:/Users/Marce/CLionProjects/Trabalho Final/menu.c
  C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
@@ -18,3 +19,7 @@ CMakeFiles/Trabalho_Final.dir/menus.c.obj
  C:/Users/Marce/CLionProjects/Trabalho Final/menus.c
  C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
  C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
+CMakeFiles/Trabalho_Final.dir/takeaway.c.obj
+ C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
+ C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
+ C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.c

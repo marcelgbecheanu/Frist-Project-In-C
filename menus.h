@@ -6,6 +6,7 @@ typedef struct menu{
     int amount;
     float price;
     float total;
+    int defined;
 } menu;
 
 typedef struct nodeMenu{

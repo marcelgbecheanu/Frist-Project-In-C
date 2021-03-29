@@ -250,6 +250,33 @@ menus.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/menus.c.s
 .PHONY : menus.c.s
 
+takeaway.obj: takeaway.c.obj
+
+.PHONY : takeaway.obj
+
+# target to build an object file
+takeaway.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/takeaway.c.obj
+.PHONY : takeaway.c.obj
+
+takeaway.i: takeaway.c.i
+
+.PHONY : takeaway.i
+
+# target to preprocess a source file
+takeaway.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/takeaway.c.i
+.PHONY : takeaway.c.i
+
+takeaway.s: takeaway.c.s
+
+.PHONY : takeaway.s
+
+# target to generate assembly for a file
+takeaway.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/takeaway.c.s
+.PHONY : takeaway.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -271,6 +298,9 @@ help:
 	@echo ... menus.obj
 	@echo ... menus.i
 	@echo ... menus.s
+	@echo ... takeaway.obj
+	@echo ... takeaway.i
+	@echo ... takeaway.s
 .PHONY : help
 
 

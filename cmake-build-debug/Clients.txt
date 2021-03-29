@@ -1,2 +1,6 @@
-32323231*dawdawa adawdaw*T*21/02/200213/30/20*13/30/20*
-232121111*becheanu adawdaw*T*21/02/200213/30/20*13/30/20*
+client*23121*Marcel Becheanu*T*16/06/2030*13/30/20*1*2*2*1:10:20*Não sei o que por{newline}nao sei o que por.*7.300000*
+menu*23121*1*BIG MAC*1*4.800000*
+menu*23121*0*BATATA FRITA*1*2.500000*
+client*23212121*Marcel Becheanu*T*16/06/2030*13/30/20*1*2*2*1:10:20*Não sei o que por{newline}nao sei o que por.*7.300000*
+menu*23212121*1*BIG MAC*1*4.800000*
+menu*23212121*0*BATATA FRITA*1*2.500000*

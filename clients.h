@@ -3,7 +3,7 @@
 #include "menus.h"
 
 typedef struct client {
-    char id[10];
+    char id[10]; // NIF
     char name[50];
     char typology;
     char date[10];
@@ -31,3 +31,4 @@ listClients* clients;
 
 void loadClients();
 void saveClients();
+void dataTestClient();

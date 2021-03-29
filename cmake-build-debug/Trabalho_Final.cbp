@@ -95,6 +95,12 @@
 		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/menus.h">
 			<Option target="Trabalho_Final"/>
 		</Unit>
+		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.c">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
 		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/utils.h">
 			<Option target="Trabalho_Final"/>
 		</Unit>

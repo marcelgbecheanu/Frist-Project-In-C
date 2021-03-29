@@ -6,23 +6,21 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Marce/CLionProjects/Trabalho Final/clients.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-utils.h
-C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
-clients.h
-C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
-
 C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
 menus.h
 C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
 
 C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
 
-C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
+C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+clients.h
+C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
+menus.h
+C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
 

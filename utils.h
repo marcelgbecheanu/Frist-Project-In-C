@@ -1,10 +1,13 @@
 // Defindo nome dos arquivos de armazenamento.
 #define DIR_MENUS_STORAGE "Menus.txt"
 #define DIR_CLIENTS_STORAGE "Clients.txt"
+#define DIR_TABLES_STORAGE "Tables.txt"
 
 /*
+ *
  * Permite a utilização de cores na consola.
  * Utilizando codigo em ANSI.
+ *
  */
 
 #define ANSI_COLOR_BLACK    "\x1b[30m"

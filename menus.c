@@ -90,6 +90,8 @@ void loadMenus(){
 
                 m.total = (m.amount * m.price);
 
+                m.defined = 0;
+
                 pushMenu(listMenus, m);
             }
         }
