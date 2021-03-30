@@ -19,6 +19,8 @@ stdlib.h
 -
 string.h
 -
+ctype.h
+-
 clients.h
 C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
 menus.h

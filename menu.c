@@ -9,10 +9,12 @@ void setUTF8(){
 }
 
 int getOption(){
+    fflush(stdin);
     int cache = 0;
     printf("\n› Selecione: ");
     if(scanf("%d", &cache) != 1 || cache < 1 || cache > 6){
-        printf("\n› Selecione uma opção de 1 a 6!");
+        printf("%d", &cache);
+        printf("\n› Selecione uma opção de 1 a 6!\n");
         system("pause");
         getOption();
     }
