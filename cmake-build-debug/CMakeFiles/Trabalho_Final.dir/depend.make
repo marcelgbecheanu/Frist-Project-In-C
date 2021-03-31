@@ -10,6 +10,7 @@ CMakeFiles/Trabalho_Final.dir/main.c.obj: ../clients.h
 CMakeFiles/Trabalho_Final.dir/main.c.obj: ../main.c
 CMakeFiles/Trabalho_Final.dir/main.c.obj: ../menu.h
 CMakeFiles/Trabalho_Final.dir/main.c.obj: ../menus.h
+CMakeFiles/Trabalho_Final.dir/main.c.obj: ../reservations.h
 CMakeFiles/Trabalho_Final.dir/main.c.obj: ../takeaway.h
 
 CMakeFiles/Trabalho_Final.dir/menu.c.obj: ../menu.c
@@ -18,6 +19,10 @@ CMakeFiles/Trabalho_Final.dir/menu.c.obj: ../utils.h
 CMakeFiles/Trabalho_Final.dir/menus.c.obj: ../menus.c
 CMakeFiles/Trabalho_Final.dir/menus.c.obj: ../menus.h
 CMakeFiles/Trabalho_Final.dir/menus.c.obj: ../utils.h
+
+CMakeFiles/Trabalho_Final.dir/reservations.c.obj: ../clients.h
+CMakeFiles/Trabalho_Final.dir/reservations.c.obj: ../menus.h
+CMakeFiles/Trabalho_Final.dir/reservations.c.obj: ../reservations.c
 
 CMakeFiles/Trabalho_Final.dir/takeaway.c.obj: ../clients.h
 CMakeFiles/Trabalho_Final.dir/takeaway.c.obj: ../menus.h

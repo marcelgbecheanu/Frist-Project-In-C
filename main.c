@@ -4,6 +4,7 @@
 #include "menus.h"
 #include "clients.h"
 #include "takeaway.h"
+#include "reservations.h"
 
 int main(){
     setUTF8();
@@ -24,6 +25,7 @@ int main(){
                 initializeTakeAway();
                 break;
             case 3:
+                initializeReservation();
                 break;
             case 4:
                 break;

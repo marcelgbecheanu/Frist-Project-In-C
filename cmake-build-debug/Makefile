@@ -250,6 +250,33 @@ menus.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/menus.c.s
 .PHONY : menus.c.s
 
+reservations.obj: reservations.c.obj
+
+.PHONY : reservations.obj
+
+# target to build an object file
+reservations.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/reservations.c.obj
+.PHONY : reservations.c.obj
+
+reservations.i: reservations.c.i
+
+.PHONY : reservations.i
+
+# target to preprocess a source file
+reservations.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/reservations.c.i
+.PHONY : reservations.c.i
+
+reservations.s: reservations.c.s
+
+.PHONY : reservations.s
+
+# target to generate assembly for a file
+reservations.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/reservations.c.s
+.PHONY : reservations.c.s
+
 takeaway.obj: takeaway.c.obj
 
 .PHONY : takeaway.obj
@@ -298,6 +325,9 @@ help:
 	@echo ... menus.obj
 	@echo ... menus.i
 	@echo ... menus.s
+	@echo ... reservations.obj
+	@echo ... reservations.i
+	@echo ... reservations.s
 	@echo ... takeaway.obj
 	@echo ... takeaway.i
 	@echo ... takeaway.s
