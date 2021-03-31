@@ -1,1 +1,6 @@
-client*32323232*Marcel Becheanu*u*NaN*NaN*0*0*0*NaN*NaN*0.000000*
+client*232*Marcel Becheanu*T*23/23/2323*23:23:23*0*0*0*NaN*NaN*500.000000*
+menu*232*0*BATATA FRITA*200*2.500000*
+client*2321232*Marcel Becheanu*T*23/23/2001*23:23:23*0*0*0*NaN*NaN*0.000000*
+menu*2321232*1*BIG MAC*200*4.800000*
+client*23232*Marcel Becheanu*T*20/20/2001*23:23:23*0*0*0*NaN*NaN*0.000000*
+menu*23232*1*BIG MAC*4*4.800000*

@@ -45,6 +45,7 @@ char* getNif(){
 }
 
 char* getName(){
+    system("cls");
     fflush(stdin);
     char name[50];
     printf("› Digite o nome completo: ");
@@ -60,14 +61,38 @@ char* getName(){
 }
 
 char* getDate(){
-    char name[50];
-    printf("› Digite a completo: ");
-    scanf("%s", &name);
+    system("cls");
+    fflush(stdin);
+    char date[10];
+    printf("› Digite a data para levantamento: ");
+    scanf("%s", &date);
+    if(strlen(date) < 10 || date[2] != '/' || date[5] != '/') {
+        printf("\n› A data é invalida utilize o seguinte formato dd/MM/yyyy!");
+        system("pause");
+        getDate();
+    }
+    char* p = date;
+    return p;
 }
 
-dataClient registerClient(){
+char* getHour(){
+    system("cls");
+    fflush(stdin);
+    char hour[8];
+    printf("› Digite a hora do levantamento: ");
+    scanf("%s", &hour);
+    if(strlen(hour) < 8 || hour[2] != ':' || hour[5] != ':') {
+        printf("\n› A hora é invalida utilize o seguinte formato hh:mm:ss!");
+        system("pause");
+        getHour();
+    }
+    char* p = hour;
+    return p;
+}
+
+dataClient registerClient(char *nif){
     dataClient client;
-    strcpy(client.data.id, getNif());
+    strcpy(client.data.id, nif);
     strcpy(client.data.name, getName());
     client.data.typology = 'u';
     strcpy(client.data.date, "NaN");
@@ -116,7 +141,7 @@ dataClient searchClient(){
         }else{
             valid = 1;
             if(option == 1){
-                return registerClient();
+                return registerClient(NIF);
             }else if(option == 2){
                 searchClient();
             }
@@ -128,6 +153,74 @@ dataClient searchClient(){
             break;
         }
     }
+}
+
+menu getMeal(){
+    int id = 0;
+    printf("› Selecione o menu: ");
+    scanf("%d", &id);
+    nodeMenu* pointerMenu = listMenus->head;
+    while (pointerMenu != NULL){
+        if(pointerMenu->data.id == id) {
+
+            int qnt = 0;
+            printf("\n› Quantidade de menu: ");
+            scanf("%d", &qnt);
+            printf("\n› Valor Total do Menu: %f\n", qnt*pointerMenu->data.price);
+
+            menu menuCache = pointerMenu->data;
+            menuCache.amount = qnt;
+            menuCache.total = qnt*menuCache.price;
+            menuCache.defined = 1;
+
+            return menuCache;
+
+        }
+        pointerMenu = pointerMenu->next;
+    }
+    menu menuCache;
+    menuCache.defined = 0;
+    printf("› Não foi possivel encontrar o menu selecionado.\n");
+    system("pause");
+    return menuCache;
+}
+
+void getMeals(nodeClient *pointer){
+    fflush(stdin);
+    int option = 0;
+    for(int i=0; i<10; i++){
+        if(option == 0){
+            system("cls");
+
+            nodeMenu* meal = listMenus->head;
+
+            printf("[!]=+=+=+=+=+=+=+=[ MENUS ]=+=+=+=+=+=+=+=[!]\n");
+            printf("\n");
+            while (meal != NULL){
+                printf(" > Número: %d", meal->data.id);
+                printf(" Nome: %s\n", meal->data.name);
+                printf("\n");
+                meal = meal->next;
+            }
+            printf("[!]=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=[!]\n");
+
+            menu a = getMeal();
+            if(i >= 0 && a.defined != 1){
+                i--;
+            }else{
+                pointer->data.meal[i] = a;
+            }
+
+
+            printf("› Deseja adicionar mais produtos: (0 - Sim : 1 - Não)\n› ");
+            scanf("%d", &option);
+        }
+    }
+    for(int i =0; i<10; i++){
+        pointer->data.total += (float)(pointer->data.meal[i].price*pointer->data.meal[i].amount);
+    }
+    printf("› Valor Total: %f", pointer->data.total);
+    system("pause");
 }
 
 void initializeTakeAway(){
@@ -143,6 +236,19 @@ void initializeTakeAway(){
             //Foi encontrado o cliente.
             //Agora vamos preencher os dados.
             pointer->data.typology = 'T';
+            strcpy(pointer->data.date, getDate());
+            strcpy(pointer->data.hour, getHour());
+            pointer->data.ability = 0;
+            pointer->data.table = 0;
+            pointer->data.people = 0;
+
+            menu menuCache;
+            menuCache.defined=0;
+            for(int i=0; i<10; i++){
+                pointer->data.meal[i] = menuCache;
+            }
+            getMeals(pointer);
+
 
 
 
