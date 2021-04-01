@@ -1,8 +1,9 @@
-#pragma once
-
-typedef struct tables {
-    int twoTable = 6;
-    int fourTable = 12;
-    int sixTable = 4;
+#include <stdio.h>
+#include <stdlib.h>
+typedef struct tables{
+    int twoTable;
+    int fourTable;
+    int sixTable
 } tables;
 
+tables listTables;

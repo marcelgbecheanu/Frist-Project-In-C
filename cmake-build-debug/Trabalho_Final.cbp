@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/Payments.c">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/Payments.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
 		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/clients.c">
 			<Option target="Trabalho_Final"/>
 		</Unit>
@@ -99,6 +105,9 @@
 			<Option target="Trabalho_Final"/>
 		</Unit>
 		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/reservations.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/tables.c">
 			<Option target="Trabalho_Final"/>
 		</Unit>
 		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/tables.h">

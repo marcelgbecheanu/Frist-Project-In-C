@@ -216,8 +216,11 @@ void getMeals(nodeClient *pointer){
             scanf("%d", &option);
         }
     }
+    pointer->data.total = 0.0f;
     for(int i =0; i<10; i++){
-        pointer->data.total += (float)(pointer->data.meal[i].price*pointer->data.meal[i].amount);
+        if(pointer->data.meal[i].defined == 1){
+            pointer->data.total += pointer->data.meal[i].total;
+        }
     }
     printf("› Valor Total: %f", pointer->data.total);
     system("pause");
@@ -241,6 +244,8 @@ void initializeTakeAway(){
             pointer->data.ability = 0;
             pointer->data.table = 0;
             pointer->data.people = 0;
+            strcpy(pointer->data.time, "NaN");
+
 
             menu menuCache;
             menuCache.defined=0;
@@ -249,7 +254,10 @@ void initializeTakeAway(){
             }
             getMeals(pointer);
 
-
+            fflush(stdin);
+            system("cls");
+            printf("> Descrição do pedido: ");
+            scanf("%[^\n]", pointer->data.detail);
 
 
         }else{

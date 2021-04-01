@@ -142,6 +142,33 @@ Trabalho_Final/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/build
 .PHONY : Trabalho_Final/fast
 
+Payments.obj: Payments.c.obj
+
+.PHONY : Payments.obj
+
+# target to build an object file
+Payments.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/Payments.c.obj
+.PHONY : Payments.c.obj
+
+Payments.i: Payments.c.i
+
+.PHONY : Payments.i
+
+# target to preprocess a source file
+Payments.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/Payments.c.i
+.PHONY : Payments.c.i
+
+Payments.s: Payments.c.s
+
+.PHONY : Payments.s
+
+# target to generate assembly for a file
+Payments.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/Payments.c.s
+.PHONY : Payments.c.s
+
 clients.obj: clients.c.obj
 
 .PHONY : clients.obj
@@ -277,6 +304,33 @@ reservations.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/reservations.c.s
 .PHONY : reservations.c.s
 
+tables.obj: tables.c.obj
+
+.PHONY : tables.obj
+
+# target to build an object file
+tables.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/tables.c.obj
+.PHONY : tables.c.obj
+
+tables.i: tables.c.i
+
+.PHONY : tables.i
+
+# target to preprocess a source file
+tables.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/tables.c.i
+.PHONY : tables.c.i
+
+tables.s: tables.c.s
+
+.PHONY : tables.s
+
+# target to generate assembly for a file
+tables.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/tables.c.s
+.PHONY : tables.c.s
+
 takeaway.obj: takeaway.c.obj
 
 .PHONY : takeaway.obj
@@ -313,6 +367,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Trabalho_Final
+	@echo ... Payments.obj
+	@echo ... Payments.i
+	@echo ... Payments.s
 	@echo ... clients.obj
 	@echo ... clients.i
 	@echo ... clients.s
@@ -328,6 +385,9 @@ help:
 	@echo ... reservations.obj
 	@echo ... reservations.i
 	@echo ... reservations.s
+	@echo ... tables.obj
+	@echo ... tables.i
+	@echo ... tables.s
 	@echo ... takeaway.obj
 	@echo ... takeaway.i
 	@echo ... takeaway.s

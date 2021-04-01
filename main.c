@@ -1,16 +1,25 @@
 #include <windows.h>
-#include <stdio.h>
 #include "menu.h"
 #include "menus.h"
 #include "clients.h"
 #include "takeaway.h"
 #include "reservations.h"
+#include "tables.h"
+#include "Payments.h"
 
 int main(){
     setUTF8();
 
     loadMenus();
     loadClients();
+
+    tables tablesCache;
+    tablesCache.twoTable = 6;
+    tablesCache.fourTable = 12;
+    tablesCache.sixTable = 4;
+
+    listTables = tablesCache;
+
 
     int option = 0;
     while(option != 6){
@@ -28,6 +37,9 @@ int main(){
                 initializeReservation();
                 break;
             case 4:
+                showPayment();
+                break;
+            case 5:
                 break;
 
         }

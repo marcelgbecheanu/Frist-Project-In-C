@@ -154,6 +154,32 @@ CMakeFiles/Trabalho_Final.dir/reservations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/reservations.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Marce\CLionProjects\Trabalho Final\reservations.c" -o CMakeFiles\Trabalho_Final.dir\reservations.c.s
 
+CMakeFiles/Trabalho_Final.dir/tables.c.obj: CMakeFiles/Trabalho_Final.dir/flags.make
+CMakeFiles/Trabalho_Final.dir/tables.c.obj: ../tables.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Marce\CLionProjects\Trabalho Final\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Trabalho_Final.dir/tables.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Final.dir\tables.c.obj   -c "C:\Users\Marce\CLionProjects\Trabalho Final\tables.c"
+
+CMakeFiles/Trabalho_Final.dir/tables.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Final.dir/tables.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Marce\CLionProjects\Trabalho Final\tables.c" > CMakeFiles\Trabalho_Final.dir\tables.c.i
+
+CMakeFiles/Trabalho_Final.dir/tables.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/tables.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Marce\CLionProjects\Trabalho Final\tables.c" -o CMakeFiles\Trabalho_Final.dir\tables.c.s
+
+CMakeFiles/Trabalho_Final.dir/Payments.c.obj: CMakeFiles/Trabalho_Final.dir/flags.make
+CMakeFiles/Trabalho_Final.dir/Payments.c.obj: ../Payments.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Users\Marce\CLionProjects\Trabalho Final\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Trabalho_Final.dir/Payments.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Trabalho_Final.dir\Payments.c.obj   -c "C:\Users\Marce\CLionProjects\Trabalho Final\Payments.c"
+
+CMakeFiles/Trabalho_Final.dir/Payments.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Trabalho_Final.dir/Payments.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\Marce\CLionProjects\Trabalho Final\Payments.c" > CMakeFiles\Trabalho_Final.dir\Payments.c.i
+
+CMakeFiles/Trabalho_Final.dir/Payments.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Trabalho_Final.dir/Payments.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\Marce\CLionProjects\Trabalho Final\Payments.c" -o CMakeFiles\Trabalho_Final.dir\Payments.c.s
+
 # Object files for target Trabalho_Final
 Trabalho_Final_OBJECTS = \
 "CMakeFiles/Trabalho_Final.dir/main.c.obj" \
@@ -161,7 +187,9 @@ Trabalho_Final_OBJECTS = \
 "CMakeFiles/Trabalho_Final.dir/menus.c.obj" \
 "CMakeFiles/Trabalho_Final.dir/clients.c.obj" \
 "CMakeFiles/Trabalho_Final.dir/takeaway.c.obj" \
-"CMakeFiles/Trabalho_Final.dir/reservations.c.obj"
+"CMakeFiles/Trabalho_Final.dir/reservations.c.obj" \
+"CMakeFiles/Trabalho_Final.dir/tables.c.obj" \
+"CMakeFiles/Trabalho_Final.dir/Payments.c.obj"
 
 # External object files for target Trabalho_Final
 Trabalho_Final_EXTERNAL_OBJECTS =
@@ -172,11 +200,13 @@ Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/menus.c.obj
 Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/clients.c.obj
 Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/takeaway.c.obj
 Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/reservations.c.obj
+Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/tables.c.obj
+Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/Payments.c.obj
 Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/build.make
 Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/linklibs.rsp
 Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/objects1.rsp
 Trabalho_Final.exe: CMakeFiles/Trabalho_Final.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Marce\CLionProjects\Trabalho Final\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable Trabalho_Final.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="C:\Users\Marce\CLionProjects\Trabalho Final\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable Trabalho_Final.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Trabalho_Final.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
