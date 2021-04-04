@@ -17,6 +17,7 @@ CMakeFiles/Trabalho_Final.dir/main.c.obj
  C:/Users/Marce/CLionProjects/Trabalho Final/menu.h
  C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
  C:/Users/Marce/CLionProjects/Trabalho Final/reservations.h
+ C:/Users/Marce/CLionProjects/Trabalho Final/statistics.h
  C:/Users/Marce/CLionProjects/Trabalho Final/tables.h
  C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.h
 CMakeFiles/Trabalho_Final.dir/menu.c.obj
@@ -32,6 +33,8 @@ CMakeFiles/Trabalho_Final.dir/reservations.c.obj
  C:/Users/Marce/CLionProjects/Trabalho Final/reservations.c
  C:/Users/Marce/CLionProjects/Trabalho Final/tables.h
 CMakeFiles/Trabalho_Final.dir/statistics.c.obj
+ C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
+ C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
  C:/Users/Marce/CLionProjects/Trabalho Final/statistics.c
 CMakeFiles/Trabalho_Final.dir/tables.c.obj
  C:/Users/Marce/CLionProjects/Trabalho Final/tables.c

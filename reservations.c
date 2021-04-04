@@ -191,7 +191,7 @@ dataClientRS searchClientRS(){
             if(option == 1){
                 return registerClientRS(NIF);
             }else if(option == 2){
-                searchClientRS();
+                return searchClientRS();
             }
             else{
                 dataClientRS data;

@@ -143,7 +143,7 @@ dataClient searchClient(){
             if(option == 1){
                 return registerClient(NIF);
             }else if(option == 2){
-                searchClient();
+                return searchClient();
             }
             else{
                 dataClient data;

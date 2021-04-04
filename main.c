@@ -6,6 +6,7 @@
 #include "reservations.h"
 #include "tables.h"
 #include "Payments.h"
+#include "statistics.h"
 
 int main(){
     setUTF8();
@@ -40,6 +41,7 @@ int main(){
                 showPayment();
                 break;
             case 5:
+                menuStatistics();
                 break;
 
         }

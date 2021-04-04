@@ -40,7 +40,7 @@ void showPayment(){
         if(strcmp(pointer->data.id, nif) == 0){
             // Temos o cliente;
 
-            time_t now;
+          /*  time_t now;
             struct tm *now_tm;
             int hour;
             int min;
@@ -54,27 +54,28 @@ void showPayment(){
 
             int hourIn = 0;
             char tempo[2] = {pointer->data.hour[0], pointer->data.hour[1]};
-            sscanf(tempo, "%d", &hourIn);
-            hour = hour * 3600;
-            hourIn = hourIn *3600;
-
-            printf("\nHora de Entrada: %d\n Hora de Saida: %d\n", hourIn, hour);
-            system("pause");
-
-            fflush(stdin);
+            hourIn = atoi(19);
+*/
             char mins[2] = {pointer->data.hour[3], pointer->data.hour[4]};
-            int minIn = 0;
-            sscanf(mins, "%d", &minIn);
+        //    int minIn = atoi(30);
+            fflush(stdout);
+            fflush(stdin);
+            fflush(stderr);
+            setvbuf(stdout, NULL, _IONBF, 0);
 
-            int test = (int)mins;
-            printf("\nMin de Entrada: %d\n Min de Saida: %d\n",test, min);
-            min = min * 60;
-            minIn = minIn *60;
 
-            printf("\nMin de Entrada: %d\n Min de Saida: %d\n", minIn, min);
+            printf("%s", mins);
+            system("pause");
+
+/*
+            printf("\nHora de Entrada: %2.d", hourIn);
             system("pause");
 
 
+            printf("\nMin de Entrada: %2.d", minIn);
+            system("pause");
+
+*/
 
 /*
 
@@ -85,13 +86,13 @@ void showPayment(){
             int cache3 = 0;
             sscanf(secs, "%d", &cache3);
             sec -= cache3;
-*/
 
 
             char timp[8];
             sprintf(timp, "%d:%d:%d", hour, min, sec);
             strcpy(pointer->data.time, timp);
 
+*/
 
 
             system("cls");
