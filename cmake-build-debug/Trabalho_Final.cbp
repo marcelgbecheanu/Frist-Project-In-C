@@ -107,6 +107,12 @@
 		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/reservations.h">
 			<Option target="Trabalho_Final"/>
 		</Unit>
+		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/statistics.c">
+			<Option target="Trabalho_Final"/>
+		</Unit>
+		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/statistics.h">
+			<Option target="Trabalho_Final"/>
+		</Unit>
 		<Unit filename="C:/Users/Marce/CLionProjects/Trabalho Final/tables.c">
 			<Option target="Trabalho_Final"/>
 		</Unit>

@@ -15,6 +15,10 @@ string.h
 -
 ctype.h
 -
+windows.h
+-
+time.h
+-
 clients.h
 C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
 

@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
+#include <windows.h>
+#include <time.h>
 
 #include "clients.h"
 
@@ -31,13 +33,66 @@ char* getNifPS(){
 }
 
 void showPayment(){
-    printf("\n[!]=+=+=+=+=+=+=[ RECIBO ]=+=+=+=+=+=+=[!]");
     nodeClient *pointer = clients->head;
     char nif[10];
     strcpy(nif, getNifPS());
     while (pointer != NULL){
         if(strcmp(pointer->data.id, nif) == 0){
             // Temos o cliente;
+
+            time_t now;
+            struct tm *now_tm;
+            int hour;
+            int min;
+            int sec;
+
+            now = time(NULL);
+            now_tm = localtime(&now);
+            hour = now_tm->tm_hour;
+            min = now_tm->tm_min;
+            sec = now_tm->tm_sec;
+
+            int hourIn = 0;
+            char tempo[2] = {pointer->data.hour[0], pointer->data.hour[1]};
+            sscanf(tempo, "%d", &hourIn);
+            hour = hour * 3600;
+            hourIn = hourIn *3600;
+
+            printf("\nHora de Entrada: %d\n Hora de Saida: %d\n", hourIn, hour);
+            system("pause");
+
+            fflush(stdin);
+            char mins[2] = {pointer->data.hour[3], pointer->data.hour[4]};
+            int minIn = 0;
+            sscanf(mins, "%d", &minIn);
+
+            int test = (int)mins;
+            printf("\nMin de Entrada: %d\n Min de Saida: %d\n",test, min);
+            min = min * 60;
+            minIn = minIn *60;
+
+            printf("\nMin de Entrada: %d\n Min de Saida: %d\n", minIn, min);
+            system("pause");
+
+
+
+/*
+
+
+
+            fflush(stdin);
+            char secs[2] = {pointer->data.hour[6], pointer->data.hour[7]};
+            int cache3 = 0;
+            sscanf(secs, "%d", &cache3);
+            sec -= cache3;
+*/
+
+
+            char timp[8];
+            sprintf(timp, "%d:%d:%d", hour, min, sec);
+            strcpy(pointer->data.time, timp);
+
+
 
             system("cls");
             printf(" Cliente: %.50s\n", pointer->data.name);
@@ -47,19 +102,18 @@ void showPayment(){
             for(int i = 0; i<10; i++){
                 if(pointer->data.meal[i].defined == 1){
                     menu mn = pointer->data.meal[i];
-                    printf("\n %.30s %f €", mn.name, mn.price);
-                    printf("\n %d * %f = %f\n", mn.amount, mn.price, mn.total);
+                    printf("\n %.30s %.2f €", mn.name, mn.price);
+                    printf("\n %d * %.2f = %.2f\n", mn.amount, mn.price, mn.total);
                 }
             }
-            printf("\n Valor Total: %f\n", pointer->data.total);
-
+            printf("\n Duração: %s", pointer->data.time);
+            printf("\n Valor Total: %.2f\n", pointer->data.total);
 
             system("pause");
             return;
         }
         pointer = pointer->next;
     }
-    //Não temos o cliente.
     system("cls");
     printf("Não foi possivel encontrar o cliente.\n");
     system("pause");

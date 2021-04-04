@@ -31,6 +31,8 @@ CMakeFiles/Trabalho_Final.dir/reservations.c.obj: ../menus.h
 CMakeFiles/Trabalho_Final.dir/reservations.c.obj: ../reservations.c
 CMakeFiles/Trabalho_Final.dir/reservations.c.obj: ../tables.h
 
+CMakeFiles/Trabalho_Final.dir/statistics.c.obj: ../statistics.c
+
 CMakeFiles/Trabalho_Final.dir/tables.c.obj: ../tables.c
 
 CMakeFiles/Trabalho_Final.dir/takeaway.c.obj: ../clients.h

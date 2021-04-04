@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Trabalho_Final.dir/menu.c.obj"
   "CMakeFiles/Trabalho_Final.dir/menus.c.obj"
   "CMakeFiles/Trabalho_Final.dir/reservations.c.obj"
+  "CMakeFiles/Trabalho_Final.dir/statistics.c.obj"
   "CMakeFiles/Trabalho_Final.dir/tables.c.obj"
   "CMakeFiles/Trabalho_Final.dir/takeaway.c.obj"
   "Trabalho_Final.exe"

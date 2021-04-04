@@ -304,6 +304,33 @@ reservations.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/reservations.c.s
 .PHONY : reservations.c.s
 
+statistics.obj: statistics.c.obj
+
+.PHONY : statistics.obj
+
+# target to build an object file
+statistics.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/statistics.c.obj
+.PHONY : statistics.c.obj
+
+statistics.i: statistics.c.i
+
+.PHONY : statistics.i
+
+# target to preprocess a source file
+statistics.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/statistics.c.i
+.PHONY : statistics.c.i
+
+statistics.s: statistics.c.s
+
+.PHONY : statistics.s
+
+# target to generate assembly for a file
+statistics.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Trabalho_Final.dir\build.make CMakeFiles/Trabalho_Final.dir/statistics.c.s
+.PHONY : statistics.c.s
+
 tables.obj: tables.c.obj
 
 .PHONY : tables.obj
@@ -385,6 +412,9 @@ help:
 	@echo ... reservations.obj
 	@echo ... reservations.i
 	@echo ... reservations.s
+	@echo ... statistics.obj
+	@echo ... statistics.i
+	@echo ... statistics.s
 	@echo ... tables.obj
 	@echo ... tables.i
 	@echo ... tables.s

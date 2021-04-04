@@ -1,0 +1,5 @@
+void menuStatistics(){
+    while(){
+
+    }
+}

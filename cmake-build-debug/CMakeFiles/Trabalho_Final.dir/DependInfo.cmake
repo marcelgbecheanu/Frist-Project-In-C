@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "C:/Users/Marce/CLionProjects/Trabalho Final/menu.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/menu.c.obj"
   "C:/Users/Marce/CLionProjects/Trabalho Final/menus.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/menus.c.obj"
   "C:/Users/Marce/CLionProjects/Trabalho Final/reservations.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/reservations.c.obj"
+  "C:/Users/Marce/CLionProjects/Trabalho Final/statistics.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/statistics.c.obj"
   "C:/Users/Marce/CLionProjects/Trabalho Final/tables.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/tables.c.obj"
   "C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.c" "C:/Users/Marce/CLionProjects/Trabalho Final/cmake-build-debug/CMakeFiles/Trabalho_Final.dir/takeaway.c.obj"
   )
