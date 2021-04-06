@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
-#include <windows.h>
 #include <time.h>
 
 #include "clients.h"
@@ -32,17 +31,6 @@ char* getNifPS(){
     }
 }
 
-int convert(char* c){
-    for(int i=0; i<60; i++){
-        int cmp = strcmp(""+i, c);
-        printf("%d", cmp);
-        system("pause");
-        if(cmp == 0){
-           return i;
-        }
-    }
-}
-
 void showPayment(){
     nodeClient *pointer = clients->head;
     char nif[10];
@@ -68,32 +56,44 @@ void showPayment(){
             min = now_tm->tm_min;
             sec = now_tm->tm_sec;
 
-            char tempo[2] = {pointer->data.hour[0], pointer->data.hour[1]};
-            int hourIn = atoi(tempo);
+            char tempoCache[2] = {pointer->data.hour[0], pointer->data.hour[1]};
+            int hourInCache;
+            sscanf(tempoCache, "%d", &hourInCache);
 
-            char mins[2] = {pointer->data.hour[3], pointer->data.hour[4]};
-            int minIn = atoi(mins);
+            char minsCache[2] = {pointer->data.hour[3], pointer->data.hour[4]};
+            int minInCache;
+            sscanf(minsCache, "%d", &minInCache);
 
-            /*
-            char b = pointer->data.hour[3];
-            int a = convert(b);
-            printf("%d", a);
+            char secsCache[2] = {pointer->data.hour[6], pointer->data.hour[7]};
+            int secInCache;
+            sscanf(secsCache, "%d", &secInCache);
 
-            printf("\nHora de Entrada: %d", hourIn);
+            printf("\nHora de Entrada: %d", hourInCache);
             system("pause");
 
 
-            printf("\nMin de Entrada: %d", minIn);
+            printf("\nMin de Entrada: %d", minInCache);
             system("pause");
-*/
-            char secs[2] = {pointer->data.hour[6], pointer->data.hour[7]};
-            int cache3 = 0;
-            sscanf(secs, "%d", &cache3);
-            sec -= cache3;
+
+
+            printf("\nMin de Entrada: %d", secInCache);
+            system("pause");
+
+
+            //Agora vamos converter para segundos
+            int secTimeIn = (hourInCache * 3600) + (minInCache * 60) + secInCache;
+            int secTimeOut = (hour * 3600) + (min * 60) + sec;
+
+            int finalTime = (secTimeOut-secTimeIn);
+
+            int hh, mm, ss;
+            hh = finalTime/3600;
+            mm = (finalTime - hh*3600)/60;
+            ss = finalTime - hh*3600 - mm*60;
 
 
             char timp[8];
-            sprintf(timp, "%d:%d:%d", hour, min, sec);
+            sprintf(timp, "%d:%d:%d", hh, mm, ss);
             strcpy(pointer->data.time, timp);
 
 

@@ -15,8 +15,6 @@ string.h
 -
 ctype.h
 -
-windows.h
--
 time.h
 -
 clients.h
