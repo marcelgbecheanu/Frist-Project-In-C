@@ -23,37 +23,7 @@ void pushClient(listClients* listCache, client c){
     listCache->head = nodeCache;
     listCache->size++;
 }
-void dataTestClient(){
-    client clientCache;
-    strcpy(clientCache.id, "23212121");
-    strcpy(clientCache.name, "Marcel Becheanu");
-    clientCache.typology = 'T';
-    strcpy(clientCache.date, "16/06/2030");
-    strcpy(clientCache.hour, "13/30/20");
-    clientCache.ability = 1;
-    clientCache.table = 2;
-    clientCache.people = 2;
 
-    menu a = listMenus->head->data;
-    a.defined = 1;
-    clientCache.meal[0] = a;
-
-    menu b = listMenus->head->next->data;
-    b.defined = 1;
-    clientCache.meal[1] = b;
-
-    strcpy(clientCache.time, "1:10:20");
-    strcpy(clientCache.detail, "Não sei o que por{newline}nao sei o que por.");
-
-    float value = 0.0;
-    for(int i=0; i<10; i++){
-        if(clientCache.meal[i].defined == 1){
-            value += clientCache.meal[i].price * clientCache.meal[i].amount;
-        }
-    }
-    clientCache.total = value;
-    pushClient(clients, clientCache);
-}
 // VERIFICA SE EXISTE UM FICHEIRO DE ARMAZENAMENTO SE NÃO O CRIA E DEFINE ALGUNS PARAMETROS DEFAULT
 void createStorageIfNotExistClients(){
     FILE *file;

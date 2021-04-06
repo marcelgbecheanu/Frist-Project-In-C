@@ -68,18 +68,6 @@ void showPayment(){
             int secInCache;
             sscanf(secsCache, "%d", &secInCache);
 
-            printf("\nHora de Entrada: %d", hourInCache);
-            system("pause");
-
-
-            printf("\nMin de Entrada: %d", minInCache);
-            system("pause");
-
-
-            printf("\nMin de Entrada: %d", secInCache);
-            system("pause");
-
-
             //Agora vamos converter para segundos
             int secTimeIn = (hourInCache * 3600) + (minInCache * 60) + secInCache;
             int secTimeOut = (hour * 3600) + (min * 60) + sec;
@@ -113,7 +101,6 @@ void showPayment(){
             printf(" %.256s\n", pointer->data.detail);
             printf("\n Duração: %s", pointer->data.time);
             printf("\n Valor Total: %.2f\n", pointer->data.total);
-
             system("pause");
             return;
         }

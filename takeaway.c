@@ -223,7 +223,6 @@ void getMeals(nodeClient *pointer){
         }
     }
     printf("› Valor Total: %f", pointer->data.total);
-    system("pause");
 }
 
 void initializeTakeAway(){
