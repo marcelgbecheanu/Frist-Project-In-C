@@ -84,8 +84,10 @@ void showPayment(){
             int secTimeIn = (hourInCache * 3600) + (minInCache * 60) + secInCache;
             int secTimeOut = (hour * 3600) + (min * 60) + sec;
 
+            //Realizamos o calculo tempo final - tempo inicial
             int finalTime = (secTimeOut-secTimeIn);
 
+            // voltamos a converter para o formato hh:mm:ss
             int hh, mm, ss;
             hh = finalTime/3600;
             mm = (finalTime - hh*3600)/60;
@@ -96,11 +98,9 @@ void showPayment(){
             sprintf(timp, "%d:%d:%d", hh, mm, ss);
             strcpy(pointer->data.time, timp);
 
-
             system("cls");
             printf(" Cliente: %.50s\n", pointer->data.name);
             printf(" NIF: %.10s\n", pointer->data.id);
-
             printf("\n Conteudo Discriminado: \n");
             for(int i = 0; i<10; i++){
                 if(pointer->data.meal[i].defined == 1){
@@ -109,6 +109,8 @@ void showPayment(){
                     printf("\n %d * %.2f = %.2f\n", mn.amount, mn.price, mn.total);
                 }
             }
+            printf("\n Descrição do Pedido: \n");
+            printf(" %.256s\n", pointer->data.detail);
             printf("\n Duração: %s", pointer->data.time);
             printf("\n Valor Total: %.2f\n", pointer->data.total);
 
