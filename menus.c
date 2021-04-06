@@ -28,18 +28,17 @@ void printListMenu(listMenu* l){
     nodeMenu* pointer = l->head;
 
     system("cls");
-    printf("[!]=+=+=+=+=+=+=+=[ MENUS ]=+=+=+=+=+=+=+=[!]\n");
+    printf("[!]=+=+=+=+=+=+=[ MENUS ]=+=+=+=+=+=+=[!]\n");
     while (pointer != NULL){
         printf("\n");
         printf(" > Número: %d\n", pointer->data.id);
         printf(" > Nome: %s\n", pointer->data.name);
-        printf(" > Preço: %f\n", pointer->data.price);
+        printf(" > Preço: %.2f €\n", pointer->data.price);
         printf(" > Quantidade: %d\n", pointer->data.amount);
-
         printf("\n");
         pointer = pointer->next;
     }
-    printf("[!]=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=[!]\n");
+    printf("[!]=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=[!]\n");
 }
 
 // VERIFICA SE EXISTE UM FICHEIRO DE ARMAZENAMENTO SE NÃO O CRIA E DEFINE ALGUNS PARAMETROS DEFAULT

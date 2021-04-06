@@ -32,15 +32,30 @@ char* getNifPS(){
     }
 }
 
+int convert(char* c){
+    for(int i=0; i<60; i++){
+        int cmp = strcmp(""+i, c);
+        printf("%d", cmp);
+        system("pause");
+        if(cmp == 0){
+           return i;
+        }
+    }
+}
+
 void showPayment(){
     nodeClient *pointer = clients->head;
     char nif[10];
     strcpy(nif, getNifPS());
     while (pointer != NULL){
         if(strcmp(pointer->data.id, nif) == 0){
-            // Temos o cliente;
 
-          /*  time_t now;
+            fflush(stdin);
+            fflush(stdout);
+            fflush(NULL);
+            fseek(stdin,0,SEEK_END);
+
+            time_t now;
             struct tm *now_tm;
             int hour;
             int min;
@@ -48,40 +63,29 @@ void showPayment(){
 
             now = time(NULL);
             now_tm = localtime(&now);
+
             hour = now_tm->tm_hour;
             min = now_tm->tm_min;
             sec = now_tm->tm_sec;
 
-            int hourIn = 0;
             char tempo[2] = {pointer->data.hour[0], pointer->data.hour[1]};
-            hourIn = atoi(19);
-*/
+            int hourIn = atoi(tempo);
+
             char mins[2] = {pointer->data.hour[3], pointer->data.hour[4]};
-        //    int minIn = atoi(30);
-            fflush(stdout);
-            fflush(stdin);
-            fflush(stderr);
-            setvbuf(stdout, NULL, _IONBF, 0);
+            int minIn = atoi(mins);
 
+            /*
+            char b = pointer->data.hour[3];
+            int a = convert(b);
+            printf("%d", a);
 
-            printf("%s", mins);
-            system("pause");
-
-/*
-            printf("\nHora de Entrada: %2.d", hourIn);
+            printf("\nHora de Entrada: %d", hourIn);
             system("pause");
 
 
-            printf("\nMin de Entrada: %2.d", minIn);
+            printf("\nMin de Entrada: %d", minIn);
             system("pause");
-
 */
-
-/*
-
-
-
-            fflush(stdin);
             char secs[2] = {pointer->data.hour[6], pointer->data.hour[7]};
             int cache3 = 0;
             sscanf(secs, "%d", &cache3);
@@ -91,8 +95,6 @@ void showPayment(){
             char timp[8];
             sprintf(timp, "%d:%d:%d", hour, min, sec);
             strcpy(pointer->data.time, timp);
-
-*/
 
 
             system("cls");

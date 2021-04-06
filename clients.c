@@ -3,7 +3,6 @@
 #include <string.h>
 #include "utils.h"
 #include "clients.h"
-#include "menus.h"
 
 listClients* createListClients(){
     listClients* listCache = (listClients *) malloc(sizeof(listClients));
@@ -13,6 +12,7 @@ listClients* createListClients(){
 
     return listCache;
 }
+
 
 // ADICIONA UM CLIENTE A LISTA
 void pushClient(listClients* listCache, client c){
