@@ -6,37 +6,45 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Marce/CLionProjects/Trabalho Final/Payments.c
-stdlib.h
--
-stdio.h
--
-string.h
--
-ctype.h
--
-time.h
--
-clients.h
-C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
-
-C:/Users/Marce/CLionProjects/Trabalho Final/clients.c
-stdio.h
--
-stdlib.h
--
-string.h
--
-utils.h
-C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
-clients.h
-C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
+C:/Users/Marce/CLionProjects/Trabalho Final/Payments.h
 
 C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
 menus.h
 C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
 
+C:/Users/Marce/CLionProjects/Trabalho Final/main.c
+windows.h
+-
+menu.h
+C:/Users/Marce/CLionProjects/Trabalho Final/menu.h
+menus.h
+C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
+clients.h
+C:/Users/Marce/CLionProjects/Trabalho Final/clients.h
+takeaway.h
+C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.h
+reservations.h
+C:/Users/Marce/CLionProjects/Trabalho Final/reservations.h
+tables.h
+C:/Users/Marce/CLionProjects/Trabalho Final/tables.h
+Payments.h
+C:/Users/Marce/CLionProjects/Trabalho Final/Payments.h
+statistics.h
+C:/Users/Marce/CLionProjects/Trabalho Final/statistics.h
+
+C:/Users/Marce/CLionProjects/Trabalho Final/menu.h
+
 C:/Users/Marce/CLionProjects/Trabalho Final/menus.h
 
-C:/Users/Marce/CLionProjects/Trabalho Final/utils.h
+C:/Users/Marce/CLionProjects/Trabalho Final/reservations.h
+
+C:/Users/Marce/CLionProjects/Trabalho Final/statistics.h
+
+C:/Users/Marce/CLionProjects/Trabalho Final/tables.h
+stdio.h
+-
+stdlib.h
+-
+
+C:/Users/Marce/CLionProjects/Trabalho Final/takeaway.h
 

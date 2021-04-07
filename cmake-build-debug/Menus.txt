@@ -1,3 +1,5 @@
 # -> Utilize está estrutura.
 # -> ID:NAME (MAX 30 CHARS):AMOUNT:PRICE
 0:BATATA FRITA:1:2.5
+1:Hamburguer :1:5
+2:COCA COLA:1:1.4

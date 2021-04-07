@@ -15,12 +15,11 @@ int main(){
     loadClients();
 
     tables tablesCache;
-    tablesCache.twoTable = 6;
+    tablesCache.twoTable = 2;
     tablesCache.fourTable = 12;
     tablesCache.sixTable = 4;
 
     listTables = tablesCache;
-
 
     int option = 0;
     while(option != 6){

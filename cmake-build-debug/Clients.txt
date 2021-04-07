@@ -1,2 +1,8 @@
-client*232*Marcel Becheanu*P*12/01/2001*11:23:00*1*2*2*0:0:45*wdawdawdawd*5.000000*
+client*23412*awdawdawdaw*N*NaN*NaN*0*0*0*NaN*NaN*0.000000*
+client*232*Marcel Becheanu*T*07/04/2020*09:05:00*0*0*0*0:9:50*Sem Molho*10.000000*
+menu*232*1*Hamburguer*1*5.000000*
 menu*232*0*BATATA FRITA*2*2.500000*
+client*19231*Rodrigo Pita*T*17/20/2020*23:23:23*0*0*0*NaN*dawadawd*2.500000*
+menu*19231*0*BATATA FRITA*1*2.500000*
+client*21345*Mauro*P*07/04/2020*09:10:00*1*2*2*NaN*Sem MOLHO*4.200000*
+menu*21345*2*COCA COLA*3*1.400000*

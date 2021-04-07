@@ -32,4 +32,3 @@ listClients* clients;
 void loadClients();
 void saveClients();
 void pushClient();
-void dataTestClient();
